@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800&display=swap&subset=cyrillic');
+
+@main-purple:  rgb(111, 21, 226);
+@white : rgb(255, 255, 255);
+@opacity-white : rgba(255, 255, 255, 0.2);
+@tablet-width : 768px;
+@desktop-width : 1170px;
+
+body {
+  background-color: @main-purple;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.center {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
