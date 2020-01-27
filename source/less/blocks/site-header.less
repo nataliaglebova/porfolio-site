@@ -6,6 +6,19 @@
   box-shadow: 0 0 36px 0 rgba(108, 98, 255, 0.14);
   background-color: rgb(126, 41, 236);
   border-bottom: 2px solid rgba(108, 98, 255, 0.30);
+  margin-bottom: 10px;
+
+  @media(min-width: @tablet-width) {
+    width: 768px;
+    margin-bottom: 20px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 100%;
+    background: none;
+    border: none;
+    margin-bottom: 50px;
+  }
 }
 
 .site-header__logo {
@@ -13,6 +26,12 @@
   margin-left: 10px;
   margin-top: 13px;
   margin-bottom: 13px;
+
+  @media(min-width: @tablet-width) {
+    width: 100px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
 }
 
 .site-header__link {
@@ -22,8 +41,40 @@
 
 .site-header__menu-switch {
   display: none;
+
+  @media(min-width: @desktop-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: @white;
+    height: 45px;
+    align-self: center;
+    position: relative;
+  }
+
+  &::after{
+    content: "";
+    width: 25px;
+    position: absolute;
+    background-color: @main-purple;
+    height: 2px;
+    left: 23%;
+    box-shadow: 0px 6px 0px 0px @main-purple,
+                0px -6px 0px 0px @main-purple;
+  }
 }
 
 .site-header__menu {
   flex-grow: 2;
+
+  @media(min-width: @tablet-width) {
+    align-self: center;;
+  }
+
+  @media(min-width: @desktop-width) {
+    display: none;
+  }
 }

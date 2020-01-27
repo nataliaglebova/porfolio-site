@@ -1,8 +1,7 @@
 .profile {
-  width: 288px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   padding-top: 20px;
   box-shadow: 0 0 36px 0 rgba(108, 98, 255, 0.14);
   background-color: rgb(126, 41, 236);
@@ -12,6 +11,18 @@
   font-family: 'Montserrat', sans-serif;
   color: @white;
   font-size: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 364px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0 0 30px 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
 }
 
 .profile__header {
@@ -22,4 +33,68 @@
   margin-top: 0px;
   padding-left: 15px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+  }
+}
+
+.profile__item {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+  text-align: left;
+  font-size: 16px;
+  width: 35%;
+  margin-right: auto;
+  margin-left: 15px;
+  padding-left: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.profile__info {
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.profile__links{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+
+.profile__link {
+  color: @white;
+  font-size: 12px;
+  font-style: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  text-align: left;
+  border-radius: 19.5px;
+  background-color: @opacity-white;
+  padding: 6px 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    text-align: center;
+  }
 }

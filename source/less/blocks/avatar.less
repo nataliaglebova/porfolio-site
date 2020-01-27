@@ -2,11 +2,24 @@
   width: 288px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-bottom: 10px;
   padding-top: 60px;
   box-shadow: 0 0 36px 0 rgba(108, 98, 255, 0.14);
   background-color: rgb(126, 41, 236);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+  @media (min-width: @tablet-width) {
+    width: 364px;
+    margin-left: 10px;
+    padding-top: 80px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 562px;
+    padding-top: 153px;
+    margin-left: 196px;
+    margin-right: 40px;
+  }
 }
 
 .avatar__photo-shadow {
@@ -24,6 +37,16 @@
 .avatar__photo {
   border-radius: 100%;
   vertical-align: top;
+
+  @media (min-width: @tablet-width) {
+    width: 207px;
+    height: 207px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 .avatar__name {
@@ -32,6 +55,14 @@
   color: @white;
   text-align: center;
   font-size: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+
+  @media(min-width: @desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .avatar__profession {
@@ -40,4 +71,14 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media(min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }

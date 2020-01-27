@@ -5,16 +5,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media(min-width: @tablet-width) {
+    width: 380px;
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: 30px;
+  }
 }
 
 .menu__item {
   color: @white;
   font-size: 12px;
-  font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
   text-align: left;
   border-radius: 19.5px;
   background-color: @opacity-white;
   padding: 6px 10px;
+
+  @media(min-width: @tablet-width) {
+    font-size: 20px;
+    background-color: inherit;
+  }
 }
