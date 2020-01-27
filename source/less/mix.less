@@ -6,7 +6,7 @@
 @white : rgb(255, 255, 255);
 @opacity-white : rgba(255, 255, 255, 0.2);
 @tablet-width : 768px;
-@desktop-width : 1170px;
+@desktop-width : 1530px;
 
 body {
   background-color: @main-purple;
@@ -37,6 +37,13 @@ body {
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: 1530px;
+  }
+}
+
+.site-wrap {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

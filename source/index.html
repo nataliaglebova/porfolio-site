@@ -12,7 +12,9 @@
         <a href="#" class="site-header__link">
           <img src="img/logo.svg" alt="Логотип портфолио" class="site-header__logo">
         </a>
-        <button type="button" name="menu-spoiler" class="site-header__menu-switch">Меню</button>
+        <button type="button" name="menu-spoiler" class="site-header__menu-switch">
+          <span class="visually-hidden">Меню</span>
+        </button>
         <nav class="site-header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">Резюме</li>
@@ -21,7 +23,7 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="site-wrap">
         <h1 class="visually-hidden">Сайт-портфолио Глебовой Натальи, начинающего frontend-разработчика</h1>
         <section class="avatar">
           <h2 class="visually-hidden"></h2>
@@ -31,38 +33,40 @@
           <p class="avatar__name">Наталья Глебова</p>
           <p class="avatar__profession">Верстальщик, начинающий frontend-разработчик</p>
         </section>
-        <section class="profile">
-          <h2 class="profile__header">Профайл</h2>
-          <p class="profile__item profile__item--name">Имя</p>
-          <p class="profile__info">Наталья Глебова</p>
-          <p class="profile__item profile__item--birth">Дата рождения</p>
-          <p class="profile__info">18.04.1994</p>
-          <p class="profile__item profile__item--city">Проживание</p>
-          <p class="profile__info">Москва, Россия</p>
-          <p class="profile__item profile__item--tel">Контактный телефон</p>
-          <p class="profile__info">+79111111111</p>
-          <p class="profile__item profile__item--email">Email</p>
-          <p class="profile__info">nataliaglebova7@gmail.com</p>
-          <div class="profile__links">
-            <a href="#" class="profile__link">Скачать CV</a>
-            <a href="#" class="profile__link">Написать мне</a>
-            <a href="#" class="profile__link">Последние проекты</a>
-          </div>
-        </section>
-        <section class="objective">
-          <h2 class="objective__header">Мои стремления</h2>
-          <p class="objective__text">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in repre derit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ip dolor sit amet, consectetur adipisicingelit, sed do  eiusmod tem ididunt ut labore etdolore magna aliqua. Ut enim ad minim veni derit in voluptate velit esse cillum dolore. </p>
-        </section>
+        <div>
+          <section class="profile">
+            <h2 class="profile__header">Профайл</h2>
+            <p class="profile__item profile__item--name">Имя</p>
+            <p class="profile__info">Наталья Глебова</p>
+            <p class="profile__item profile__item--birth">Дата рождения</p>
+            <p class="profile__info">18.04.1994</p>
+            <p class="profile__item profile__item--city">Проживание</p>
+            <p class="profile__info">Москва, Россия</p>
+            <p class="profile__item profile__item--tel">Контактный телефон</p>
+            <p class="profile__info">+79111111111</p>
+            <p class="profile__item profile__item--email">Email</p>
+            <p class="profile__info">11111@gmail.com</p>
+            <div class="profile__links">
+              <a href="#" class="profile__link">Скачать CV</a>
+              <a href="#" class="profile__link">Написать мне</a>
+              <a href="#" class="profile__link">Проекты</a>
+            </div>
+          </section>
+          <section class="objective">
+            <h2 class="objective__header">Мои стремления</h2>
+            <p class="objective__text">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore etdolore magna aliqua. Ut ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in repre derit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ip dolor sit amet, consectetur adipisicingelit, sed do  eiusmod tem ididunt ut labore etdolore magna aliqua. Ut enim ad minim veni derit in voluptate velit esse cillum dolore. </p>
+          </section>
+        </div>
         <footer class="site-footer">
-          <p>© 2018 Cvrim. All rights reserved.</p>
-          <a href="#">
-            <span>Вконтакте</span>
+          <p class="site-footer__copyright">© All rights reserved.</p>
+          <a href="#" class="site-footer__link site-footer__link--vk">
+            <span class="visually-hidden">Вконтакте</span>
           </a>
-          <a href="#">
-            <span>GitHub</span>
+          <a href="#" class="site-footer__link site-footer__link--git">
+            <span class="visually-hidden">GitHub</span>
           </a>
-          <a href="#">
-            <span>Telegram</span>
+          <a href="#" class="site-footer__link site-footer__link--tg">
+            <span class="visually-hidden">Telegram</span>
           </a>
         </footer>
       </main>
