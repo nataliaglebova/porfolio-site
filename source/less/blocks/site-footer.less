@@ -4,28 +4,78 @@
   width: 290px;
   padding: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media(min-width: @tablet-width) {
     width: 100%;
+    justify-content: space-around;
+  }
+
+  @media(min-width: @desktop-width) {
+    margin-left: 0px;
+    padding-left: 196px;
+    padding-right: 160px;
   }
 }
 
 .site-footer__copyright{
   @media(min-width: @tablet-width) {
     margin-right: auto;
+    align-self: center;
   }
+}
+
+.site-footer__social-networks {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  width: 40%;
+
+  @media(min-width: @tablet-width) {
+    width: 20%;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 12%;
+  }
+
 }
 
 .site-footer__link {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: @opacity-white;
   border-radius: 50%;
+
+  @media(min-width: @tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.site-footer__social-networks{
-  @media(min-width: @tablet-width) {
-    width: 100%;
-  }
+.site-footer__link--vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+}
+
+.site-footer__link--git {
+  background-image: url("../img/github-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.site-footer__link--tg {
+  background-image: url("../img/telegram-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
 }
