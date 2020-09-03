@@ -1,0 +1,80 @@
+.skills {
+  width: 570px;
+  padding: 40px 30px;
+  box-shadow: 0 0 36px 0 rgba(108, 98, 255, 0.14);
+  background-color: rgb(126, 41, 236);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.skills__header {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+  color: @white;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.skills__list {
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  padding-top: 18px;
+  margin-top: 30px;
+  list-style: none;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: @white;
+  font-size: 20px;
+}
+
+.skills__item {
+  position: relative;
+  padding-left: 65px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.skills-picture(@url) {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: @url;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -5px;
+  top: 10px;
+}
+
+.skills__item--html::before {
+  .skills-picture(url("../img/html-icon.svg"));
+}
+
+.skills__item--css::before {
+  .skills-picture(url("../img/css-icon.svg"));
+}
+
+.skills__item--less::before {
+  .skills-picture(url("../img/less-icon.svg"));
+}
+
+.skills__item--js::before {
+  .skills-picture(url("../img/js-icon.svg"));
+}
+
+.skills__item--gulp::before {
+  .skills-picture(url("../img/gulp-icon.svg"));
+}
+
+.skills__item--git::before {
+  .skills-picture(url("../img/git-icon.svg"));
+}
+
+.skills__item--github::before {
+  .skills-picture(url("../img/github-icon.svg"));
+}
+
+.skills__item--ps::before {
+  .skills-picture(url("../img/photoshop-icon.svg"));
+}
+
+.skills__item--zeplin::before {
+  .skills-picture(url("../img/zeplin-icon.svg"));
+}

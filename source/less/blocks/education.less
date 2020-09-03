@@ -1,0 +1,45 @@
+.education {
+  width: 570px;
+  padding: 40px 30px;
+  box-shadow: 0 0 36px 0 rgba(108, 98, 255, 0.14);
+  background-color: rgb(126, 41, 236);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin-right: 30px;
+}
+
+.education__header {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+  color: @white;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.education-date-flag(@date) {
+  content: @date;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 800;
+  color: @white;
+  font-size: 20px;
+  height: 30px;
+  width: 80px;
+  transform: rotate(-90deg);
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 8px;
+  border-radius: 50px 0 0 50px;
+  top: 25px;
+  right: -25px;
+}
+
+.education__level-1::after,
+.education__level-3::after {
+  .education-date-flag("2019");
+}
+
+.education__level-2::after {
+  .education-date-flag("2020");
+}
