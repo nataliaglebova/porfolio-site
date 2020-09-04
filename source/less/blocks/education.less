@@ -1,19 +1,31 @@
 .education {
-  width: 570px;
-  padding: 40px 30px;
+  width: 100%;
+  padding: 20px 0px;
   box-shadow: 0 0 36px 0 rgba(108, 98, 255, 0.14);
   background-color: rgb(126, 41, 236);
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  margin-right: 30px;
+  margin-bottom: 10px;
+
+  @media(min-width: @tablet-width) {
+    width: 570px;
+  }
+
+  @media(min-width: @desktop-width) {
+    margin-right: 30px;
+  }
 }
 
 .education__header {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: 800;
   color: @white;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 15px;
+
+   @media(min-width: @desktop-width) {
+    font-size: 28px;
+  }
 }
 
 .education-date-flag(@date) {
@@ -23,16 +35,25 @@
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: 800;
   color: @white;
-  font-size: 20px;
-  height: 30px;
-  width: 80px;
+  font-size: 16px;
+  height: 20px;
+  width: 60px;
   transform: rotate(-90deg);
   text-align: right;
   padding-right: 10px;
-  padding-top: 8px;
+  padding-top: 4px;
   border-radius: 50px 0 0 50px;
-  top: 25px;
+  top: 23px;
+  right: -23px;
+
+  @media(min-width: @desktop-width) {
+    font-size: 20px;
+    height: 30px;
+    width: 80px;
+    padding-top: 8px;
+    top: 25px;
   right: -25px;
+  }
 }
 
 .education__level-1::after,
