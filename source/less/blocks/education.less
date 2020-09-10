@@ -10,6 +10,7 @@
     width: 45%;
     margin-right: 20px;
     margin-bottom: 0;
+    padding-left: 15px;
   }
 
   @media(min-width: @desktop-width) {
@@ -18,15 +19,20 @@
 }
 
 .education__header {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-weight: 800;
+  font-family:'Jost', sans-serif;
+  font-weight: 600;
   color: @white;
-  font-size: 24px;
+  font-size: 28px;
   margin: 0;
   padding: 0 0 0 15px;
 
+   @media(min-width: @tablet-width) {
+     font-size: 34px;
+   }
+
    @media(min-width: @desktop-width) {
-    font-size: 28px;
+    font-size: 36px;
+    margin-bottom: 25px;
   }
 }
 
@@ -34,7 +40,7 @@
   content: @date;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.3);
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   color: @white;
   font-size: 16px;
